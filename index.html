@@ -4,18 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Ghaemmaghami's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        h4 {
+            color: #555;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify; /* Justify text alignment */
+
+            
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            text-align: justify; /* Justify text alignment */
+
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style for the "Contact me" section */
+        .contact-me {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>Ali Ghaemmaghami's Resume</h1>
-        <img src="./image.jpg" alt="Ali Ghaemmaghami" height="200">
-        <p><a href="./contact.html">Contact me</a></p>
+    <img src="./image.jpg" alt="Ali Ghaemmaghami" height="200">
+
+    <!-- Centered "Contact me" section -->
+    <section class="contact-me">
+        <a class="contact-link" href="./contact.html">Contact me</a>
+    </section>
+    <section>
         <h2>Summary</h2>
         <p>My name is Ali Ghaemmaghami. I am a dedicated student currently pursuing research under the supervision of Dr. Andrea Schiffauerova and Dr. Ashkan Ebadi. My primary focus is on developing a decision support system aimed at early detection of emerging technologies. To achieve this objective, I employ various techniques and algorithms including Natural Language Processing, Text Mining, Deep Learning, and Machine Learning.</p>
 
         <p>During my tenure as a research assistant in the data science team at the National Research Council Canada, I had the privilege of working for approximately four months as my first job in Canada for the federal government. This experience provided me with invaluable exposure to a professional team and real-world problem-solving. It served as my second opportunity to contribute as a researcher and data scientist, allowing me to thrive in an advanced environment.</p>
-    
+
         <p>My enthusiasm for the realm of data is boundless, as I am fascinated by the exploration of patterns and trends within vast datasets that are accessible to us all. I am open to embracing any opportunity that can enhance my experience of this dynamic field including an internship or a full-time job as I am graduating in 6 months.</p>
-    
+    </section>
+
+    <section>
         <h2>Education</h2>
         <h3><a href="https://www.concordia.ca/">Concordia University</a></h3>
         <p>Master's degree - Information Systems Engineering<br>
@@ -31,45 +131,51 @@
             Bachelor of Science (B.S.), Industrial Engineering<br>
             2010-2015
         </p>
+    </section>
+
+    <section>
         <h2>Work</h2>
-            <h3><a href="https://www.concordia.ca/">Concordia University</a></h3>
-                <h4>Research Assistant</h4>
-                <p>Jan 2021 - Present (2 year 8 months +) <br>
-                    Master of Information Systems Engineering <br>
-                    Thesis: Early Detection of Emerging Technologies with Machine Learning Approaches <br>
-    
-                    Graduate Courses:<br>
-                    <ul><li>Total Quality Project Management (INSE6230) : A+</li>
-                        <li>Quality-Based Systems Engineering (INSE6270) : A+</li> 
-                        <li>Machine Learning (COMP6321) : A</li></ul>                    
-                </p>
-            <h3><a href="https://nrc.canada.ca/en">National Research Council Canada / Conseil national de recherches Canada</a></h3>
-                <h4>Data Science Research Student</h4>
-                <p>Sep 2021 - Dec 2021 (4 months)<br>
-                <ul>
-                <li>My main objective was to gather the data from SQL, analyze them, and come up with the resolutions that have resulted from different research solutions in the targeted field. My supervisor and I tried multiple pipelines to optimize the results of our work using python programming.</li>
+        <h3><a href="https://www.concordia.ca/">Concordia University</a></h3>
+        <h4>Research Assistant</h4>
+        <p>Jan 2021 - Present (2 years 8 months +) <br>
+            Master of Information Systems Engineering <br>
+            Thesis: Early Detection of Emerging Technologies with Machine Learning Approaches <br>
+
+            Graduate Courses:<br>
+            <ul>
+                <li>Total Quality Project Management (INSE6230) : A+</li>
+                <li>Quality-Based Systems Engineering (INSE6270) : A+</li> 
+                <li>Machine Learning (COMP6321) : A</li>
+            </ul>                    
+        </p>
+        <h3><a href="https://nrc.canada.ca/en">National Research Council Canada / Conseil national de recherches Canada</a></h3>
+        <h4>Data Science Research Student</h4>
+        <p>Sep 2021 - Dec 2021 (4 months)<br>
+            <ul>
+                <li>My main objective was to gather the data from SQL, analyze them, and come up with the resolutions that have resulted from different research solutions in the targeted field. My supervisor and I tried multiple pipelines to optimize the results of our work using Python programming.</li>
                 <li>I used to begin my day by attending a team meeting to monitor our progress, and then proceeded to engage in coding tasks and reviewing pull requests from my colleagues using Git version control.</li>
-                </ul>
-                </p>
-            <h3><a href="https://pezeshkekhoob.com/">Pezeshkekhoob</a></h3>
-                <h4>Digital Marketing Manager</h4>
-                <p>Jun 2017 - Dec 2020 (3 years 7 months)<br>
-                    <br>
-                    My core activities in this company were:<ul>
-                    <li>Search Engine Optimization (SEO)</li>
-                    <li>Google AdWords Planning and Implementation </li>
-                    <li>Content Marketing Planning and Implementation </li>
-                    <li>Social Media Content Planning</li>
-                    </ul>
-                   </p>
-            <h3>Omran Sarir International Company</h3>
-                <h4>Project Control Specialist</h4>
+            </ul>
+        </p>
+        <h3><a href="https://pezeshkekhoob.com/">Pezeshkekhoob</a></h3>
+        <h4>Digital Marketing Manager</h4>
+        <p>Jun 2017 - Dec 2020 (3 years 7 months)<br>
+            My core activities in this company were:
+            <ul>
+                <li>Search Engine Optimization (SEO)</li>
+                <li>Google AdWords Planning and Implementation</li>
+                <li>Content Marketing Planning and Implementation</li>
+                <li>Social Media Content Planning</li>
+            </ul>
+        </p>
+    </section>
+
+    <section>
         <h2>Skills</h2>
         <ul>
             <li>Machine Learning</li>
             <li>Python (Programming Language)</li>
             <li>Natural Language Processing (NLP)</li>
-            <li>Deep  Learning</li>
+            <li>Deep Learning</li>
             <li>SQL</li>
             <li>Data Science</li>
             <li>R (Programming Language)</li>
@@ -80,6 +186,9 @@
             <li>HTML</li>
             <li>CSS</li>
         </ul>
+    </section>
+
+    <section>
         <h2>Certificates</h2>
         <ul>
             <li><a href="https://ude.my/UC-174eac47-0441-4f96-ac81-b4af08b19600">Python for Data Science and Machine Learning Bootcamp - Udemy</a></li>
@@ -87,19 +196,29 @@
             <li><a href="https://udemy.com/certificate/UC-c1726554-9e9c-4669-b04a-7f6c397d1f8f/">SQL for Data Analysis: Beginner MySQL Business Intelligence - Udemy</a></li>
             <li><a href="https://udemy.com/certificate/UC-8a900af0-9d99-46b3-8107-3a0c090f1f18/">Pattern Detection with Python Regular Expressions (Regex) - Udemy</a></li>
         </ul>
-        <h2>Languages</h2>
-        <p><ul><li>Persian</li>
-            <li>English</li>
-            <li>French</li>
+    </section>
 
+    <section>
+        <h2>Languages</h2>
+        <p>
+            <ul>
+                <li>Persian</li>
+                <li>English</li>
+                <li>French</li>
             </ul>
         </p>
+    </section>
+
+    <section>
         <h2><a href="./hobbies.html">Hobbies</a></h2>
-        <p> You can see details about my hobbies in the provided link.</p>
-        <footer>
-            <small>
-              Copyright © Ali Ghaemmaghami Archives. All Rights Reserved.
-            </small>
-          </footer>
+        <p>You can see details about my hobbies in the provided link.</p>
+    </section>
+<footer>
+    <small>
+        Copyright © Ali Ghaemmaghami Archives. All Rights Reserved.
+    </small>
+</footer>
+
 </body>
+
 </html>
